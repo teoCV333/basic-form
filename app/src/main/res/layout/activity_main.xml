@@ -97,24 +97,28 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttonC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:onClick="vote"
+                android:tag="C"
                 android:text="C"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.567"
-                app:layout_constraintStart_toEndOf="@+id/button2"
+                app:layout_constraintStart_toEndOf="@+id/buttonB"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.8" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="124dp"
                 android:gravity="center"
+                android:onClick="vote"
+                android:tag="B"
                 android:text="B"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -122,14 +126,16 @@
                 app:layout_constraintVertical_bias="0.8" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:gravity="center"
+                android:onClick="vote"
+                android:tag="A"
                 android:text="A"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintEnd_toStartOf="@+id/buttonB"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -141,7 +147,7 @@
                 android:layout_height="31dp"
                 android:gravity="center"
                 android:text="Voto"
-                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintBottom_toTopOf="@+id/buttonB"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
