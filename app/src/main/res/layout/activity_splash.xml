@@ -22,8 +22,9 @@
             android:layout_marginTop="11dp"
             android:layout_marginEnd="13dp"
             android:layout_marginBottom="11dp"
+            android:fontFamily="monospace"
             android:gravity="center"
-            android:text="Copyrigth 2023"
+            android:text="@string/copyrigth"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,7 @@
             android:layout_marginBottom="17dp"
             android:fontFamily="monospace"
             android:gravity="center"
-            android:text="Modulo de votación"
+            android:text="@string/tittle"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +72,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animationView"
+            android:id="@+id/success"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"

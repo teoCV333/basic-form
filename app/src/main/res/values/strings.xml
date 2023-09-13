@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">basic_form</string>
+    <string name="copyrigth">Copyrigth 2023</string>
+    <string name="tittle">Modulo de votación</string>
+    <string name="tittle_1">Formulario de votación</string>
+    <string name="tittle_2">Confirmación de voto</string>
+    <string name="label_name">Nombre:</string>
+    <string name="label_cc">Cedula:</string>
+    <string name="label_birth">Fecha de nacimiento:</string>
+    <string name="label_vote">Voto:</string>
+    <string name="btn_op_1">A</string>
+    <string name="btn_op_2">B</string>
+    <string name="btn_op_3">C</string>
+    <string name="btn_edit">Editar</string>
+    <string name="btn_confirm">Confirmar</string>
 </resources>

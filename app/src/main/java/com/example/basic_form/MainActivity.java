@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     private FormModel dataForEdit;
 
+    boolean success = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     public void vote(View v) {
         String name = editTextName.getText().toString();
         String cc = editTextCC.getText().toString();
@@ -59,9 +60,31 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
-        FormModel data = new FormModel(name, cc, birth, vote);
-        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-        intent.putExtra("data", data);
-        startActivity(intent);
+
+        success = checkFormFields();
+        if(success) {
+            FormModel data = new FormModel(name, cc, birth, vote);
+            Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+            intent.putExtra("data", data);
+            startActivity(intent);
+        }
     }
+
+    private boolean checkFormFields() {
+        success = true;
+        if(editTextName.getText().toString().length() == 0) {
+            editTextName.setError("Este campo es requerido.");
+            success = false;
+        }
+        if(editTextCC.getText().toString().length() == 0) {
+            editTextCC.setError("Este campo es requerido.");
+            success = false;
+        }
+        if(editTextBirth.getText().toString().length() == 0) {
+            editTextBirth.setError("Este campo es requerido.");
+            success = false;
+        }
+        return success;
+    }
+
 }
