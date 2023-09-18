@@ -34,7 +34,7 @@ public class ResultActivity extends AppCompatActivity {
         constraintLayout1 = findViewById(R.id.constraintLayout1);
         constraintLayout2 = findViewById(R.id.constraintLayout2);
         constraintLayout3 = findViewById(R.id.constraintLayout3);
-        success = findViewById(R.id.success);
+        success = findViewById(R.id.registerAnimation);
 
         Intent intent = getIntent();
         data = (FormModel) intent.getSerializableExtra("data");
@@ -56,7 +56,7 @@ public class ResultActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(ResultActivity.this, MainActivity.class));
+                startActivity(new Intent(ResultActivity.this, LoginActivity.class));
                 finish();
             }
         },  5000);

@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -32,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation("com.google.firebase:firebase-auth:22.1.1")
     val lottieVersion = "6.1.0"
     implementation ("com.airbnb.android:lottie:$lottieVersion")
     implementation("androidx.appcompat:appcompat:1.6.1")

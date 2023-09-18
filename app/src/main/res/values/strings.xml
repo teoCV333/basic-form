@@ -13,4 +13,9 @@
     <string name="btn_op_3">C</string>
     <string name="btn_edit">Editar</string>
     <string name="btn_confirm">Confirmar</string>
+    <string name="login_text">Iniciar sesión</string>
+    <string name="register_text">Registrarse</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Correo electronico</string>
+    <string name="cancel">Cancel</string>
 </resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783855545187",
+    "project_id": "login-register-fb-4a740",
+    "storage_bucket": "login-register-fb-4a740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783855545187:android:479dbeda9bfbce94ea4156",
+        "android_client_info": {
+          "package_name": "com.example.basic_form"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Icdc-p2_x844xaJ7FKF22PncJ7PThhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
